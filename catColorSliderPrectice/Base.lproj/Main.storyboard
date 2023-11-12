@@ -37,9 +37,6 @@
                                     <segment title="大斑"/>
                                     <segment title="小斑"/>
                                 </segments>
-                                <connections>
-                                    <action selector="selectPatternType:" destination="BYZ-38-t0r" eventType="valueChanged" id="8G4-a1-UGq"/>
-                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="輸入寵物名稱" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wDR-q8-4Ll">
                                 <rect key="frame" x="100" y="87" width="249" height="34"/>
@@ -61,7 +58,9 @@
                                 <rect key="frame" x="36" y="764" width="149" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Random"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Random">
+                                    <color key="baseBackgroundColor" red="0.48262198670000001" green="0.61784802100000003" blue="0.78392244590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="pressGetRandom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rbl-qD-Voe"/>
                                 </connections>
@@ -70,15 +69,17 @@
                                 <rect key="frame" x="207" y="763" width="149" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="重做一隻"/>
+                                <buttonConfiguration key="configuration" style="filled" title="重做一隻">
+                                    <color key="baseBackgroundColor" red="0.77246092369999997" green="0.7714710038" blue="0.78876243940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="pressToRedo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Yq-uH-QpE"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="CoO-CI-hQ8">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="250" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="CoO-CI-hQ8">
                                 <rect key="frame" x="82" y="588" width="218" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.44852338824036353" blue="0.32196004875842565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="adjustRedValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="dhr-o6-hR0"/>
                                 </connections>
@@ -97,10 +98,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="99x-A1-FP8">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="169" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="99x-A1-FP8">
                                 <rect key="frame" x="82" y="636" width="218" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                <color key="minimumTrackTintColor" red="0.72567703443229958" green="0.7235648998844223" blue="0.2314894091734388" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="adjustGreenValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="60g-UF-Dd2"/>
                                 </connections>
@@ -112,10 +113,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="nJC-Eh-YdN">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="27" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="nJC-Eh-YdN">
                                 <rect key="frame" x="82" y="687" width="218" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                <color key="minimumTrackTintColor" red="0.41935175572641303" green="0.68318974298413782" blue="0.84676794632516728" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="adjustBlueValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="R3o-xW-AxY"/>
                                 </connections>
@@ -175,15 +176,6 @@
         <image name="cat" width="2048" height="2048"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
